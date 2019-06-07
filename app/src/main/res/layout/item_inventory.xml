@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="InventoryListDTO"
+            type="com.ssk.retailshop.screen.report.model.InventoryListDTO" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/iron"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/nameProduct"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/iron"
+                android:gravity="center"
+                android:text='@{"" + InventoryListDTO.code}'
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="2dp" />
+
+            <TextView
+                android:id="@+id/tv_tongTien"
+                android:layout_width="127dp"
+                android:layout_height="match_parent"
+                android:background="@color/iron"
+                android:gravity="center"
+                android:text='@{"" + InventoryListDTO.tonHienTai}'
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="276dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:id="@+id/ticketWarHouse"
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/iron"
+                android:gravity="center"
+                android:text="Chi tiết"
+                android:textColor="@color/red1"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="142dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            android:paddingTop="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout7"></LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

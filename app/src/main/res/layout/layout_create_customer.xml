@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+        <variable
+            name="CreateCustomerItem"
+            type="com.ssk.retailshop.screen.customer.model.CreateCustomersDTO" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnSave"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edtNameCus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:ems="10"
+                        android:hint="Tên khách hàng *"
+                        android:inputType="textPersonName"
+                        android:text="@={CreateCustomerItem.fullName}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <EditText
+                        android:id="@+id/editText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:ems="10"
+                        android:hint="Số điện thoại"
+                        android:inputType="phone"
+                        android:text="@={CreateCustomerItem.phone}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/edtNameCus" />
+
+                    <EditText
+                        android:id="@+id/edtAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:ems="10"
+                        android:hint="Địa chỉ"
+                        android:inputType="textPersonName"
+                        android:text="@={CreateCustomerItem.address}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Giới tính"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/edtAddress" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                        <RadioButton
+                            android:id="@+id/rdbtn_tienMat"
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:text="Nam"
+                            android:textSize="18sp"
+                            tools:layout_editor_absoluteX="8dp"
+                            tools:layout_editor_absoluteY="216dp" />
+
+                        <RadioButton
+                            android:id="@+id/rdbtn_chuyenKhoan"
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:text="Nữ"
+                            android:textSize="18sp"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="142dp"
+                            tools:layout_editor_absoluteY="216dp" />
+
+                        <RadioButton
+                            android:id="@+id/rdbtn_the"
+                            android:layout_width="127dp"
+                            android:layout_height="wrap_content"
+                            android:text="Khác"
+                            android:textSize="18sp"
+                            tools:layout_editor_absoluteX="276dp"
+                            tools:layout_editor_absoluteY="216dp" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/edtNote"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        android:ems="10"
+                        android:hint="Ghi chú"
+                        android:inputType="textPersonName"
+                        android:text="@={CreateCustomerItem.createdBy}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text="Chi tiết "
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <Switch
+                            android:id="@+id/swch_ChiTiet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(Thông tin chi tiết) "
+                            android:textStyle="italic" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lnl_ChiTietCreateCus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout16">
+
+                    <EditText
+                        android:id="@+id/edtBirthDay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:ems="10"
+                        android:hint="Ngày sinh"
+                        android:inputType="textPersonName"
+                        android:text="@={CreateCustomerItem.birthday}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="351dp" />
+
+                    <EditText
+                        android:id="@+id/edtMail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:ems="10"
+                        android:hint="Địa chỉ Email"
+                        android:inputType="textPersonName"
+                        android:text="@={CreateCustomerItem.email}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/edtBirthDay" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/edtMail">
+
+                        <RadioButton
+                            android:id="@+id/rdbtn_congTy"
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:text="Công ty"
+                            android:textSize="18sp"
+                            tools:layout_editor_absoluteX="8dp"
+                            tools:layout_editor_absoluteY="216dp" />
+
+                        <RadioButton
+                            android:id="@+id/rdbtn_caNhan"
+                            android:layout_width="126dp"
+                            android:layout_height="wrap_content"
+                            android:text="Cá nhân"
+                            android:textSize="18sp"
+                            tools:ignore="MissingConstraints"
+                            tools:layout_editor_absoluteX="142dp"
+                            tools:layout_editor_absoluteY="216dp" />
+
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/editText7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:ems="10"
+                        android:hint="Mã số thuế"
+                        android:inputType="textPersonName"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:background="@color/colorReturns"
+                    android:onClick="onClickRegisterCustomer"
+                    android:text="@string/btn_save"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

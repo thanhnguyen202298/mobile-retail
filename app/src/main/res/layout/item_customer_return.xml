@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/nameCustomer"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/monsoon"
+        android:gravity="center"
+        android:text="BinhTT"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/dateCustomerReturn"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:background="@color/monsoon"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:text="16/05/2019"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/totalMoney"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:paddingRight="8dp"
+        android:layout_weight="1"
+        android:background="@color/monsoon"
+        android:gravity="right"
+        android:textColor="@color/white"
+        android:text="1000000"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="274dp"
+        tools:layout_editor_absoluteY="0dp" />
+</android.support.constraint.ConstraintLayout>

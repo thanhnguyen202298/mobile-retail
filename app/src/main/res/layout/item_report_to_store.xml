@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+
+        <variable
+            name="ReportToStoreDTO"
+            type="com.ssk.retailshop.screen.report.model.ReportToStoreDTO" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <LinearLayout
+            android:id="@+id/ln2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/iron"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@{ReportToStoreDTO.fullName}"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text='@{"" + ReportToStoreDTO.SLHang}'
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:text='@{"" + ReportToStoreDTO.doanhSo}'
+                />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/nameProduct"-->
+                <!--android:layout_width="137dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@{ReportToStoreDTO.fullName}"-->
+                <!--tools:ignore="MissingConstraints" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/numberInventory"-->
+                <!--android:layout_width="137dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:inputType="text"-->
+                <!--android:text='@{"" + ReportToStoreDTO.SLHang}'-->
+                <!--android:textAppearance="@style/TextAppearance.AppCompat.Small"-->
+                <!--app:layout_constraintStart_toEndOf="@+id/nameProduct"-->
+                <!--app:layout_constraintTop_toTopOf="@+id/nameProduct" />-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/ticketWarHouse"-->
+                <!--android:layout_width="137dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:text='@{"" + ReportToStoreDTO.doanhSo}'-->
+                <!--app:layout_constraintStart_toEndOf="@+id/numberInventory"-->
+                <!--app:layout_constraintTop_toTopOf="@+id/numberInventory" />-->
+
+        <!--</LinearLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            android:paddingTop="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ln2"></LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</layout>

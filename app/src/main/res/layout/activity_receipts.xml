@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.ReceiptsActivity">
+
+    <TextView
+        android:id="@+id/txt_nhanVien"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/margin_big"
+        android:background="@drawable/edit_boder"
+        android:gravity="center|left"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:text="Ngày thu"
+        app:layout_constraintEnd_toEndOf="@id/rdbtn_the"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/rdbtn_tienMat"
+        tools:layout_editor_absoluteY="240dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_nhaCungCap"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/margin_big"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_boder"
+        android:gravity="center|left"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:text="Người nộp tiền"
+        app:layout_constraintEnd_toEndOf="@id/rdbtn_the"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/rdbtn_tienMat"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nhanVien" />
+
+    <TextView
+        android:id="@+id/txt_ghiChu"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/margin_big"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_boder"
+        android:gravity="center|left"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:text="Ghi chú tổng đơn hàng"
+        app:layout_constraintEnd_toEndOf="@id/rdbtn_the"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/rdbtn_tienMat"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nhaCungCap" />
+
+    <TextView
+        android:id="@+id/txt_addTitleReceipts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_addReceipts"
+        android:textColor="@color/red1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/txt_ngayNhap"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/margin_big"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/edit_boder"
+        android:gravity="center|left"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:text="Số tiền thu"
+        app:layout_constraintEnd_toEndOf="@id/rdbtn_the"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/rdbtn_tienMat"
+        app:layout_constraintTop_toBottomOf="@id/rdbtn_chuyenKhoan" />
+
+    <RadioButton
+        android:id="@+id/rdbtn_tienMat"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:text="Tiền mặt"
+        android:textColor="@color/red1"
+        app:layout_constraintStart_toStartOf="@+id/txt_maPhieu"
+        app:layout_constraintTop_toTopOf="@+id/rdbtn_chuyenKhoan" />
+
+    <RadioButton
+        android:id="@+id/rdbtn_chuyenKhoan"
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Chuyển khoản"
+        android:textColor="@color/red1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_maPhieu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="142dp" />
+
+    <RadioButton
+        android:id="@+id/rdbtn_the"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:text="Thẻ"
+        android:textColor="@color/red1"
+        app:layout_constraintEnd_toEndOf="@+id/txt_maPhieu"
+        app:layout_constraintTop_toTopOf="@+id/rdbtn_chuyenKhoan" />
+
+
+    <TextView
+        android:id="@+id/txt_maPhieu"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/margin_big"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/edit_boder"
+        android:gravity="center|left"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:text="---Chọn loại thu---"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_addTitleReceipts" />
+
+    <Switch
+        android:id="@+id/swch_themMoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Thêm mới"
+        android:textColor="@color/red1"
+        app:layout_constraintStart_toStartOf="@+id/txt_ghiChu"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ghiChu" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorReturns"
+        android:text="@string/btn_save"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_maPhieu"
+        app:layout_constraintStart_toStartOf="@+id/txt_maPhieu" />
+
+</android.support.constraint.ConstraintLayout>

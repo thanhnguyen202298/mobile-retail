@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/theme_red"
+            android:text="Thông tin cơ bản"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Tên hàng hóa"
+            android:background="@drawable/edit_boder"
+            android:id="@+id/edit_shopname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Barcode"
+            android:background="@drawable/edit_boder"
+            android:id="@+id/edit_shopcode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:hint="Ngành hàng"
+            android:background="@drawable/edit_boder"
+            android:id="@+id/sp_stockgroup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="0 số lượng"
+            android:background="@drawable/edit_boder"
+            android:id="@+id/edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Tự xuất mã hàng hóa nếu không nhập"
+            android:background="@drawable/edit_boder"
+            android:id="@+id/edit_vatnumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:hint="0 số lượng"
+            android:background="@drawable/edit_boder"
+            android:id="@+id/sp_manufacture"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+            <Switch
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sw_posshow" />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:textColor="@color/theme_red"
+                android:layout_width="wrap_content"
+                android:text="Hiển thị ra màn hình POS"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <TextView
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/theme_red"
+            android:text="Thông tin giá sản phẩm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="0đ giá vốn"
+            android:background="@drawable/edit_boder"
+            android:id="@+id/edit_costprice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="0% tăng thêm"
+            android:background="@drawable/edit_boder"
+            android:id="@+id/edit_increase"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="0đ giá bán"
+            android:background="@drawable/edit_boder"
+            android:id="@+id/edit_buycost"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/theme_red"
+            android:text="Thông tin kho"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Cảnh báo khi tồn kho nhỏ hơn 0"
+            android:background="@drawable/edit_boder"
+            android:id="@+id/edit_inventory"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_boder"
+            android:id="@+id/sp_warehouse"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content">
+            <Switch
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sw_warehousemanage" />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:textColor="@color/theme_red"
+                android:layout_width="wrap_content"
+                android:text="Quản lý sản phẩm theo thuộc tính"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/lay_attribute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/theme_red"
+                android:text="Thuộc tính sản phẩm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <Spinner
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:background="@drawable/edit_boder"
+                android:id="@+id/sp_attribute"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="Giá trị"
+                android:background="@drawable/edit_boder"
+                android:id="@+id/edit_value"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:background="@drawable/edit_redbutton"
+                android:id="@+id/btn_save"
+                android:text="Lưu"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

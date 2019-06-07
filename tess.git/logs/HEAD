@@ -1,0 +1,37 @@
+0000000000000000000000000000000000000000 e03e1c3b72e8092c6e75a4130c516edd514d8974 thanh nguyễn trung <victo202298@gmail.com> 1554777858 +0700	commit (initial): thanh intit
+e03e1c3b72e8092c6e75a4130c516edd514d8974 e03e1c3b72e8092c6e75a4130c516edd514d8974 thanh nguyễn trung <victo202298@gmail.com> 1554798079 +0700	reset: moving to HEAD
+e03e1c3b72e8092c6e75a4130c516edd514d8974 ed65c70ecdfc002750466c2b5b9636bd700dadd5 thanh nguyễn trung <victo202298@gmail.com> 1554798080 +0700	merge origin/master: Fast-forward
+ed65c70ecdfc002750466c2b5b9636bd700dadd5 6d319c44de10d284299461e9b7129bec008057d9 thanh nguyễn trung <victo202298@gmail.com> 1554801981 +0700	commit: add ttls
+6d319c44de10d284299461e9b7129bec008057d9 6d319c44de10d284299461e9b7129bec008057d9 thanh nguyễn trung <victo202298@gmail.com> 1554802025 +0700	reset: moving to HEAD
+6d319c44de10d284299461e9b7129bec008057d9 966f2b30b5ddb9258a4d1dea3dbfd4b1ad200eef thanh nguyễn trung <victo202298@gmail.com> 1554802026 +0700	merge origin/master: Merge made by the 'recursive' strategy.
+966f2b30b5ddb9258a4d1dea3dbfd4b1ad200eef 966f2b30b5ddb9258a4d1dea3dbfd4b1ad200eef thanh nguyễn trung <victo202298@gmail.com> 1554803966 +0700	reset: moving to HEAD
+966f2b30b5ddb9258a4d1dea3dbfd4b1ad200eef 565b020a360dbe83deeef893712b138f5563d0e9 thanh nguyễn trung <victo202298@gmail.com> 1554803967 +0700	merge origin/master: Fast-forward
+565b020a360dbe83deeef893712b138f5563d0e9 ac387652ed06985b268c26f330dd228d48ee3f90 thanh nguyễn trung <victo202298@gmail.com> 1554804075 +0700	commit: add ttls
+ac387652ed06985b268c26f330dd228d48ee3f90 ac387652ed06985b268c26f330dd228d48ee3f90 thanh nguyễn trung <victo202298@gmail.com> 1554807308 +0700	reset: moving to HEAD
+ac387652ed06985b268c26f330dd228d48ee3f90 1235204f5644a14f6f9e8060b172c442663b8a5f thanh nguyễn trung <victo202298@gmail.com> 1554807309 +0700	merge origin/master: Merge made by the 'recursive' strategy.
+1235204f5644a14f6f9e8060b172c442663b8a5f 2c16b9e9c0065d481fe2dcdb7c0d69a6717201f0 thanh nguyễn trung <victo202298@gmail.com> 1554808929 +0700	commit: add ttls
+2c16b9e9c0065d481fe2dcdb7c0d69a6717201f0 3ef26881e1749e229183e4173ef54b8cf26ac499 thanh nguyễn trung <victo202298@gmail.com> 1554861294 +0700	commit: add ttls
+3ef26881e1749e229183e4173ef54b8cf26ac499 969042740871e73288b2e3f241207c242a1c9482 thanh nguyễn trung <victo202298@gmail.com> 1554951244 +0700	commit: login token
+969042740871e73288b2e3f241207c242a1c9482 3dbf8432e50b39e3b3e73aae79c73b2d118b8c5e thanh nguyễn trung <victo202298@gmail.com> 1554953967 +0700	commit: add ttls
+3dbf8432e50b39e3b3e73aae79c73b2d118b8c5e ce07e431705853b87576998f7f3823c5c22a335b thanh nguyễn trung <victo202298@gmail.com> 1554953985 +0700	commit: add ttls
+ce07e431705853b87576998f7f3823c5c22a335b 89d779a292d0978a7c611e93b9186ed99d84ce09 thanh nguyễn trung <victo202298@gmail.com> 1555579972 +0700	commit: layout red login
+89d779a292d0978a7c611e93b9186ed99d84ce09 89d779a292d0978a7c611e93b9186ed99d84ce09 thanh nguyễn trung <victo202298@gmail.com> 1555580769 +0700	checkout: moving from master to thanhnt_login_red
+89d779a292d0978a7c611e93b9186ed99d84ce09 89d779a292d0978a7c611e93b9186ed99d84ce09 thanh nguyễn trung <victo202298@gmail.com> 1555581437 +0700	checkout: moving from thanhnt_login_red to master
+89d779a292d0978a7c611e93b9186ed99d84ce09 c3a78510beb1f291846d69ec59be7efa40e071a8 thanh nguyễn trung <victo202298@gmail.com> 1555581457 +0700	merge origin/master: Fast-forward
+c3a78510beb1f291846d69ec59be7efa40e071a8 c3a78510beb1f291846d69ec59be7efa40e071a8 thanh nguyễn trung <victo202298@gmail.com> 1558403372 +0700	reset: moving to HEAD
+c3a78510beb1f291846d69ec59be7efa40e071a8 0f68edec608b6d109253d19f8aed34ad1096cbe7 thanh nguyễn trung <victo202298@gmail.com> 1558403374 +0700	merge origin/master: Fast-forward
+0f68edec608b6d109253d19f8aed34ad1096cbe7 0f68edec608b6d109253d19f8aed34ad1096cbe7 thanh nguyễn trung <victo202298@gmail.com> 1558488920 +0700	reset: moving to HEAD
+0f68edec608b6d109253d19f8aed34ad1096cbe7 f1d6c3f44c56c522192c3e5407e71218d2edb460 thanh nguyễn trung <victo202298@gmail.com> 1558488921 +0700	merge origin/master: Fast-forward
+f1d6c3f44c56c522192c3e5407e71218d2edb460 f1d6c3f44c56c522192c3e5407e71218d2edb460 thanh nguyễn trung <victo202298@gmail.com> 1558920400 +0700	reset: moving to HEAD
+f1d6c3f44c56c522192c3e5407e71218d2edb460 3e0d7593ae9605826781ba8623fddc68c0b2fbb0 thanh nguyễn trung <victo202298@gmail.com> 1558920400 +0700	merge origin/master: Fast-forward
+3e0d7593ae9605826781ba8623fddc68c0b2fbb0 3e0d7593ae9605826781ba8623fddc68c0b2fbb0 thanh nguyễn trung <victo202298@gmail.com> 1558920884 +0700	reset: moving to HEAD
+3e0d7593ae9605826781ba8623fddc68c0b2fbb0 e5338c194c1718d91a8f04704038e352803eccff thanh nguyễn trung <victo202298@gmail.com> 1558920884 +0700	merge origin/master: Fast-forward
+e5338c194c1718d91a8f04704038e352803eccff e5338c194c1718d91a8f04704038e352803eccff thanh nguyễn trung <victo202298@gmail.com> 1559181627 +0700	reset: moving to HEAD
+e5338c194c1718d91a8f04704038e352803eccff e5338c194c1718d91a8f04704038e352803eccff thanh nguyễn trung <victo202298@gmail.com> 1559181918 +0700	reset: moving to HEAD
+e5338c194c1718d91a8f04704038e352803eccff e5338c194c1718d91a8f04704038e352803eccff thanh nguyễn trung <victo202298@gmail.com> 1559181986 +0700	reset: moving to HEAD
+e5338c194c1718d91a8f04704038e352803eccff 284a6726cc182017163628e12ab938503c5ea2c4 thanh nguyễn trung <victo202298@gmail.com> 1559182097 +0700	commit: ko biet bị gì
+284a6726cc182017163628e12ab938503c5ea2c4 f52bc942987e4b4d18e97c2b31831b3d02674ea9 thanh nguyễn trung <victo202298@gmail.com> 1559182110 +0700	merge origin/master: Merge made by the 'recursive' strategy.
+f52bc942987e4b4d18e97c2b31831b3d02674ea9 41038e49691b03804a5d4d24addabb85bb752c87 thanh nguyễn trung <victo202298@gmail.com> 1559182566 +0700	commit: ko biet bị gì
+41038e49691b03804a5d4d24addabb85bb752c87 06f2f729591de71980af6666130f0bb2e2642111 thanh nguyễn trung <victo202298@gmail.com> 1559549675 +0700	merge origin/master: Fast-forward
+06f2f729591de71980af6666130f0bb2e2642111 95a9f7d490fc163f9b891ccfa05c0f8b9dbd64dd thanh nguyễn trung <victo202298@gmail.com> 1559550295 +0700	commit: cập nhật android:text, Line:45
+95a9f7d490fc163f9b891ccfa05c0f8b9dbd64dd e380e31f1836643a071172616290d2b12c23ee86 thanh nguyễn trung <victo202298@gmail.com> 1559704645 +0700	merge origin/master: Fast-forward

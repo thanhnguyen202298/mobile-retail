@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/txt_tenNhaSX"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_tb_recycleview"
+        android:gravity="center"
+        android:text="@string/txt_tenNhaSX"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@+id/txt_tongTien"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_tongTien"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_tb_recycleview"
+        android:gravity="center"
+        android:text="@string/txt_tongTien"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="137dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_tienTraHang"
+        android:layout_width="137dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/bg_tb_recycleview"
+        android:gravity="center"
+        android:text="@string/txt_tienTraHang"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@+id/txt_tongTien"
+        tools:layout_editor_absoluteX="274dp"
+        tools:ignore="MissingConstraints" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tongTien"
+        tools:listitem="@layout/item_producer" />
+</android.support.constraint.ConstraintLayout>

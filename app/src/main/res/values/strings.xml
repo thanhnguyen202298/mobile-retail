@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">retailshop</string>
+    <string name="mail">Nhập email của bạn</string>
+    <string name="sdt">Nhập số điện thoại</string>
+    <string name="address">Nhập địa chỉ</string>
+    <string name="password" translatable="false">Nhập mật khẩu</string>
+    <string name="namestore">Nhập tên cửa hàng</string>
+    <string name="registerstore">Đăng ký cửa hàng</string>
+    <string name="registerbutton">Đăng ký</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    // Bottom menu
+    <string name="Home_BottomeMenu">Home</string>
+    <string name="Money_BottomeMenu">Tiền bạc</string>
+    <string name="Report_BottomeMenu">Báo cáo</string>
+    <string name="Logout_BottomeMenu">Đăng xuất</string>
+
+    <string name="manager">Quản lý</string>
+    <string name="customer">Khách hàng</string>
+    <string name="report">Báo cáo</string>
+    <string name="saleonline">Bán hàng Onl</string>
+    <string name="setting">Thiết lập</string>
+    <string name="home">Trang chủ</string>
+    <string name="money">Tiền bạc</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="reportSalesTitle">BÁO CÁO DOANH SỐ</string>
+    <string name="reportInventoryTitle">TỒN KHO</string>
+    <string name="orderText">Đơn hàng</string>
+    <string name="returnsText">Trả hàng</string>
+    <string name="debtText">Công nợ</string>
+    <string name="saleMoneyText">Tiền bán</string>
+    <string name="dateCreate">Ngày tạo</string>
+    <string name="sales">Doanh số</string>
+    <string name="revenue">Thực thu</string>
+    <string name="btn_save">Lưu</string>
+    <string name="txt_store">Cửa hàng</string>
+    <string name="txt_saleNumber">Số đơn hàng</string>
+    <string name="txt_sales">Doanh số</string>
+    <string name="txt_payMoney">Tiền trả</string>
+    <string name="txt_nameEmployee">Tên nhân viên</string>
+    <string name="txt_numberOrder">Số đơn hàng</string>
+    <string name="txt_Money">Tiền</string>
+    <string name="txt_numberProduct">Số lượng SP</string>
+    <string name="txt_nameProduct">Tên SP</string>
+    <string name="txt_codeProduct">Mã SP</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_coderOrderReturn">Mã phiếu</string>
+    <string name="txt_numberInventory">Tồn</string>
+    <string name="txt_codeWardHouse">Thẻ kho</string>
+    <string name="txt_greenInventory">Đầu kỳ</string>
+    <string name="txt_blueInventory">Nhập</string>
+    <string name="txt_redInventory">Xuất</string>
+    <string name="txt_yellowInventory">Tồn</string>
+    <string name="txt_addReceipts">Thêm mới</string>
+    <string name="txt_addOrderInsert">Thêm mới đơn hàng</string>
+    <string name="txt_doanhThu">Doanh thu</string>
+    <string name="txt_doanThuThuan">Doanh thu thuần</string>
+    <string name="txt_ngayTra">Ngày trả</string>
+    <string name="txt_tongTien">Tổng tiền</string>
+    <string name="txt_khachTraHang">Khách trả hàng</string>
+    <string name="txt_tenNhaSX">Nhà SX</string>
+    <string name="txt_tienTraHang">Tiền trả hàng</string>
+    <string name="txt_tonQuy">Tồn quỹ</string>
+    <string name="txt_thu">Thu</string>
+    <string name="txt_chi">Chi</string>
+
+</resources>

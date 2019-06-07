@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+    <data>
+        <variable
+            name="RequestShop"
+            type="com.ssk.retailshop.screen.shop.model.RequestShop" />
+    </data>
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:paddingTop="20dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="20dp">
+
+            <EditText
+                android:id="@+id/edit_shopname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_boder"
+                android:hint="Tên cửa hàng"
+                android:paddingLeft="10dp"
+                android:text="@={RequestShop.shopname}"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/edit_shopcode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_boder"
+                android:hint="Nhập mã cửa hàng"
+                android:paddingLeft="10dp"
+                android:text="@={RequestShop.shopcode}"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/edit_person"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_boder"
+                android:hint="Người đại diện"
+                android:paddingLeft="10dp"
+                android:text="@={RequestShop.person}"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_boder"
+                android:hint="Nhập email"
+                android:paddingLeft="10dp"
+                android:text="@={RequestShop.email}"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <Spinner
+                android:id="@+id/sp_product"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_boder"
+                android:selectedItemPosition="@={RequestShop.productgroup}"
+                android:hint="Ngành hàng"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/edit_vatnumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_boder"
+                android:hint="Mã số thuế"
+                android:paddingLeft="10dp"
+                android:text="@={RequestShop.vatnumber}"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <EditText
+                android:id="@+id/edit_website"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edit_boder"
+                android:hint="Nhập website"
+                android:paddingLeft="10dp"
+                android:text="@={RequestShop.website}"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_redbutton"
+                    android:gravity="center"
+                    android:onClick="onClickSave"
+                    android:text="Lưu"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

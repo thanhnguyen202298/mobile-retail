@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.ReceiptsActivity">
+
+    <TextView
+        android:id="@+id/txt_nhanVien"
+        android:layout_width="376dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_boder"
+        android:gravity="center|left"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:text="Nhân viên"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ngayNhap"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <TextView
+        android:id="@+id/txt_nhaCungCap"
+        android:layout_width="376dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_boder"
+        android:gravity="center|left"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:text="Nhà cung cấp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_maPhieu"
+        app:layout_constraintStart_toStartOf="@+id/txt_maPhieu"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nhanVien" />
+
+    <TextView
+        android:id="@+id/txt_ghiChu"
+        android:layout_width="376dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_boder"
+        android:gravity="center|left"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:text="Ghi chú tổng đơn hàng"
+        app:layout_constraintEnd_toEndOf="@+id/txt_maPhieu"
+        app:layout_constraintStart_toStartOf="@+id/txt_maPhieu"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nhaCungCap" />
+
+    <TextView
+        android:id="@+id/txt_addTitleReceipts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_addOrderInsert"
+        android:textColor="@color/red1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_ngayNhap"
+        android:layout_width="376dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_boder"
+        android:gravity="center|left"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:text="Ngày nhập"
+        app:layout_constraintEnd_toEndOf="@+id/txt_maPhieu"
+        app:layout_constraintStart_toStartOf="@+id/txt_maPhieu"
+        app:layout_constraintTop_toBottomOf="@+id/txt_maPhieu" />
+
+
+    <TextView
+        android:id="@+id/txt_maPhieu"
+        android:layout_width="376dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edit_boder"
+        android:gravity="center|left"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:text="Mã phiếu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_addTitleReceipts" />
+
+    <Switch
+        android:id="@+id/swch_themMoi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Thêm mới"
+        android:textColor="@color/red1"
+        app:layout_constraintStart_toStartOf="@+id/txt_maPhieu"
+        app:layout_constraintTop_toBottomOf="@+id/txt_ghiChu" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorReturns"
+        android:text="@string/btn_save"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txt_maPhieu" />
+
+</android.support.constraint.ConstraintLayout>

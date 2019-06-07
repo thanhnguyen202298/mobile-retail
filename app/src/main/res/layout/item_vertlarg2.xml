@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="item"
+            type="com.ssk.retailshop.customview.ItemVariable"/>
+    </data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/navi"
+    android:layout_margin="@dimen/half_fab_margin"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list2Item"
+        android:layout_gravity="center"
+        android:image="@{item.getIdDrawer()}"
+        android:id="@+id/imgload" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@{item.getLabel()}"
+        android:textColor="@color/white"
+
+        android:textStyle="bold" />
+
+</LinearLayout></layout>

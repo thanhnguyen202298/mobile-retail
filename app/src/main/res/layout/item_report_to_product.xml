@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="ReportToProductDTO"
+            type="com.ssk.retailshop.screen.report.model.ReportToProductDTO" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <LinearLayout
+            android:id="@+id/linearLayout15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/iron"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@{ReportToProductDTO.title}"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text='@{"" + ReportToProductDTO.SLbill}'
+                />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:text='@{"" + ReportToProductDTO.doanhSo}'
+                />
+        </LinearLayout>
+        <!--<TextView-->
+            <!--android:id="@+id/nameProduct"-->
+            <!--android:layout_width="137dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@{ReportToProductDTO.title}"-->
+            <!--tools:ignore="MissingConstraints" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/numberInventory"-->
+            <!--android:layout_width="137dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:inputType="text"-->
+            <!--android:text='@{"" + ReportToProductDTO.SLbill}'-->
+            <!--android:textAppearance="@style/TextAppearance.AppCompat.Small"-->
+            <!--app:layout_constraintStart_toEndOf="@+id/nameProduct"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/nameProduct" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/ticketWarHouse"-->
+            <!--android:layout_width="137dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="right"-->
+            <!--android:paddingRight="26dp"-->
+            <!---->
+            <!--app:layout_constraintStart_toEndOf="@+id/numberInventory"-->
+            <!--app:layout_constraintTop_toTopOf="@+id/numberInventory" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black"
+            android:paddingTop="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout15"></LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+</layout>

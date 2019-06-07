@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="AttributeItem"
+            type="com.ssk.retailshop.screen.stock.model.AttributeItem" />
+    </data>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:visibility="gone"
+            android:text='@{"" + AttributeItem.index}'
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:padding="5dp"
+                android:background="@drawable/background_border_loginform"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="40dp">
+
+                <EditText
+                    android:id="@+id/edit_add"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_toLeftOf="@+id/edit_add"
+                    android:id="@+id/img_add"
+                    android:src="@drawable/ic_add_black_24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="5dp"
+                android:background="@drawable/background_border_loginform"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="40dp">
+
+                <EditText
+                    android:id="@+id/edit_attributevalue"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <CheckBox
+                    android:layout_toLeftOf="@+id/edit_attributevalue"
+                    android:id="@+id/cb_add"
+                    android:checked="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_weight="0.1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="6dp"
+                    android:layout_toLeftOf="@+id/edit_add"
+                    android:id="@+id/img_delete"
+                    android:src="@drawable/ic_delete"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Giá trị thuộc tính đã chọn:"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>
+
